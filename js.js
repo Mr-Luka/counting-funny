@@ -83,3 +83,12 @@ start.addEventListener("click", function(){
 reset.addEventListener("click", ()=>{
     totalSeconds = 0;
 })
+
+pause.addEventListener("click", ()=>{
+    pauseE = !pauseE;
+    if(pauseE){
+        clearInterval(intervalId);
+        intervalId = null;
+        
+    }
+})

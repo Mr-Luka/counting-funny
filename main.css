@@ -240,3 +240,30 @@ nav ul li span:nth-child(4) {
 .closed {
     display: none;
 }
+
+
+@media (max-width: 768px) {
+
+
+    .modal-inner {
+        margin-right: 3rem;
+    }
+    .container {
+        margin: 5rem 1rem 2rem 1rem;
+        font-size: 4rem;
+        border-radius: 10px;
+        padding-bottom: 2rem;
+    }
+    .buttons {
+    height: 8vh;
+    margin-top: 5rem;
+    }
+    .reset,
+    .start,
+    .pause {
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+    margin: 0 0.5rem;
+    margin-top: 1rem;
+    }
+}

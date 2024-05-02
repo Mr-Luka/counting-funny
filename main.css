@@ -165,27 +165,33 @@ nav ul li span:nth-child(4) {
 
 
 /* Counting time */
+
 .container {
-    background: conic-gradient(rgb(40, 17, 118), rgb(103, 17, 114));
-    margin: 6rem 7rem 0rem 7rem;
+    background-image: url(./e31789e82dd7b6f5911c1efee36829e8.jpe);
+    background-size: cover;
+    position: relative;
+    margin: 14rem 7rem 5rem 7rem;
     font-size: 8rem;
-    color: rgb(215, 218, 32);
+    color: rgb(255, 255, 255);
     border-radius: 30px;
     border: 7px solid rgb(218, 218, 32);
     box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.359);
     transform: skewX(-7deg); 
+    padding-bottom: 5rem;
 }
 .counting {
-    text-align: center;
+    text-align: start;
+    margin-left: 1rem;
+
 }
 .leAnimate{
     animation: animate 0.4s;
 }
 
 
-
 .buttons {
     text-align: center;
+    height: 18vh;
 }
 
 .reset,
@@ -200,7 +206,8 @@ nav ul li span:nth-child(4) {
     margin: 0rem 1rem 3rem 0rem;
     cursor: pointer;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.359);
-    transform: skewX(10deg); 
+    transform: skewX(10deg);
+    margin-top: 8rem;
 }
 
 .reset:hover,

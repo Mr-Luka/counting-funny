@@ -50,6 +50,12 @@ liButtons.forEach(button=>{
 
 
 // Counting time 
+function setTime(){
+    totalSeconds++;
+    seconds.textContent = pad(parseInt(totalSeconds%60));
+    minutes.textContent = pad(parseInt(totalSeconds/60));
+}
+
 function pad (value) {
     const valString = value + "";
     if(valString.length < 2) {

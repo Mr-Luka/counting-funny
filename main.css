@@ -179,6 +179,7 @@ nav ul li span:nth-child(4) {
     box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.359);
     transform: skewX(-7deg); 
     padding-bottom: 5rem;
+
 }
 .counting {
     text-align: start;
@@ -209,6 +210,7 @@ nav ul li span:nth-child(4) {
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.359);
     transform: skewX(10deg);
     margin-top: 8rem;
+    max-width: 100%;
 }
 
 .reset:hover,

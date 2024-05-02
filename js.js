@@ -4,15 +4,7 @@ const soloButton = document.querySelector(".solo-button");
 const modalOuter = document.querySelector(".modal-outer");
 const modalInner = document.querySelector(".modal-inner");
 
-// Counting time
-const minutes = document.querySelector("#minutes");
-const seconds = document.querySelector("#seconds");
-const reset = document.querySelector(".reset");
-const start = document.querySelector(".start");
-const pause = document.querySelector(".pause")
-let totalSeconds = 0;
-let pausE = false;
-let intervalId;
+
 
 function closeModal(){
     modalOuter.classList.remove("open");
@@ -49,7 +41,18 @@ liButtons.forEach(button=>{
 })
 
 
-// Counting time 
+
+
+// Counting time
+const minutes = document.querySelector("#minutes");
+const seconds = document.querySelector("#seconds");
+const reset = document.querySelector(".reset");
+const start = document.querySelector(".start");
+const pause = document.querySelector(".pause")
+let totalSeconds = 0;
+let pauseE = false;
+let intervalId;
+
 function setTime(){
     totalSeconds++;
     seconds.textContent = pad(parseInt(totalSeconds%60));
@@ -63,10 +66,16 @@ function pad (value) {
     } else {
         return valString;
     }
-}
+};
 
-function handleStart(){
 
-}
-
-start.addEventListener("click", handleStart);
+start.addEventListener("click", function(){
+    if(!intervalId){
+        if(pauseE){
+            intervalId = setInterval(setTime, 1000);
+            pauseE = false;
+        } else {
+    intervalId = setInterval(setTime, 1000);
+        }
+    }
+});

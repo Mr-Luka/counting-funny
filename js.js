@@ -10,6 +10,9 @@ const seconds = document.querySelector("#seconds");
 const reset = document.querySelector(".reset");
 const start = document.querySelector(".start");
 const pause = document.querySelector(".pause")
+let totalSeconds = 0;
+let pausE = false;
+let intervalId;
 
 function closeModal(){
     modalOuter.classList.remove("open");
@@ -46,3 +49,18 @@ liButtons.forEach(button=>{
 })
 
 
+// Counting time 
+function pad (value) {
+    const valString = value + "";
+    if(valString.length < 2) {
+        return "0" + valString;
+    } else {
+        return valString;
+    }
+}
+
+function handleStart(){
+
+}
+
+start.addEventListener("click", handleStart);

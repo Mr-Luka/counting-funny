@@ -126,9 +126,10 @@ nav ul li span:nth-child(4) {
 }
 
 .modal-outer {
+    background-color: aqua;
     display: grid;
     position: fixed;
-    height: 100vh;
+    height: 125vh;
     width:100vw;
     justify-content: center;
     align-items: center;

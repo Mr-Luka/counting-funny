@@ -79,3 +79,7 @@ start.addEventListener("click", function(){
         }
     }
 });
+
+reset.addEventListener("click", ()=>{
+    totalSeconds = 0;
+})

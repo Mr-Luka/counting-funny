@@ -4,7 +4,12 @@ const soloButton = document.querySelector(".solo-button");
 const modalOuter = document.querySelector(".modal-outer");
 const modalInner = document.querySelector(".modal-inner");
 
-
+// Counting time
+const minutes = document.querySelector("#minutes");
+const seconds = document.querySelector("#seconds");
+const reset = document.querySelector(".reset");
+const start = document.querySelector(".start");
+const pause = document.querySelector(".pause")
 
 function closeModal(){
     modalOuter.classList.remove("open");
